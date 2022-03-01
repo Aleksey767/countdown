@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>EA Test Sazonov</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Основная часть -->
+<main class="main">
+    <!-- Три облака svg которые появляются по очереди(зависит от ширины) -->
+    <div class="main__left-cloud"><img class="left-cloud" alt="leftCloud" src="svg/leftCloud.svg"></div>
+    <div class="main__left-cloud-second"><img alt="leftCloud" src="svg/leftCloudSecond.svg"></div>
+    <div class="main__left-cloud-third"><img alt="leftCloud" src="svg/leftCloudThird.svg"></div>
+    <!-- Основная Часть контента. Лого. Заголовки. Кнопки. т.д. -->
+    <div class="main__container">
+        <div class="logotype"><a class="logoLink"><img  src="svg/logo.svg" alt="logotype"></a></div>
+        <div class="description">
+            <div class="description__title">Under Construction</div>
+            <div class="description__subTitle">We're making lots of improvements and will be back soon</div>
+        </div>
+        <!-- Обратный отсчёт -->
+        <div class="countdown">
+            <div class="countdown__images">
+                <div class="item">
+                    <div class="countdown__numbers day"></div>
+                    <img src="svg/inkle.svg" alt="inkle">
+                    <div class="item__text">Days</div>
+                    <div class="item__text-second">DD</div>
+                </div>
+                <div class="colon ">:</div>
+                <div class="item">
+                    <div class="countdown__numbers hour"></div>
+                    <img src="svg/inkle.svg" alt="inkle">
+                    <div class="item__text">Hours</div>
+                    <div class="item__text-second">HH</div>
+                </div>
+                <div class="colon new">:</div>
+                <div class="item">
+                    <div class="countdown__numbers min"></div>
+                    <img src="svg/inkle.svg" alt="inkle">
+                    <div class="item__text">Minutes</div>
+                    <div class="item__text-second">MM</div>
+                </div>
+                <div class="colon">:</div>
+                <div class="item">
+                    <div class="countdown__numbers sec"></div>
+                    <img src="svg/inkle.svg" alt="inkle">
+                    <div class="item__text">Seconds</div>
+                    <div class="item__text-second">SS</div>
+                </div>
+            </div>
+        </div>
+        <!-- Кнопка перехода на другой сайт -->
+        <div class="event">
+            <div class="event__description">Check our event page when you wait:</div>
+            <a target="_blank" href="https://egorovagency.by/">
+                <button class="event__button">Go to the event<img alt="arrow-right" src="svg/arrow.svg">
+                </button></a>
+        </div>
+    </div>
+    <!-- Аналогичные облака, только с правой стороны -->
+    <div class="main__right-cloud">
+        <img alt="rightCloud" src="svg/rightCloud.svg">
+    </div>
+    <div class="main__right-cloud-third">
+        <img alt="rightCloud-third" src="svg/rightCloudThird.svg">
+    </div>
+</main>
+<!-- Успешная отправка формы -->
+<section class="modal">
+    <div class="modal-overlay">
+        <div class="popup">
+            <div class="popup__title">Success!</div>
+            <div class="popup__subtitle">You have successfully subscribed to the email newsletter</div>
+            <button class="popup__btn">Close</button>
+        </div>
+    </div>
+</section>
+<!-- <Не>успешная отправка формы -->
+<section class="modal-wrong">
+    <div class="modal-overlay">
+        <div class="popup">
+            <div class="popup__title">Error</div>
+            <div class="popup__subtitle">Something went wrong, please reload the page and try again.</div>
+            <button class="popup__btn-wrong">Close</button>
+        </div>
+    </div>
+</section>
+<!-- Футер/Подвал -->
+<footer class="footer">
+    <form name="emailForm" class="footer__form">
+        <input name="email" size="10" class="form-input" placeholder="Enter your Email and get notified" type="text"/>
+        <button type="submit" class="btn">
+            <img class="btn-first-image" src="svg/circle.svg" alt="red-circle">
+            <img class="btn-second-image" src="svg/arrow.svg" alt="arrow">
+        </button>
+    </form>
+    <div class="error"></div>
+</footer>
+<script src="js/showButton.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/request.js"></script>
+</body>
+</html>

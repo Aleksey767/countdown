@@ -1,0 +1,392 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+
+  &__right-cloud img {
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+
+    float: right;
+  }
+
+  &__left-cloud img {
+    width: 100%;
+    max-width: 415px;
+
+    height: auto;
+  }
+
+  &__left-cloud-second {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+    }
+    @media (max-width: 376px) {
+      display: none;
+    }
+  }
+
+  &__left-cloud-third {
+    display: none;
+    @media (max-width: 376px) {
+      display: block;
+    }
+    @media (max-height: 600px) {
+      display: block;
+    }
+  }
+
+  &__right-cloud-third {
+    display: none;
+    @media (max-width: 376px) {
+      display: block;
+    }
+    @media (max-height: 600px) {
+      display: block;
+    }
+  }
+
+  &__right-cloud {
+    width: fit-content;
+    position: relative;
+    float: right;
+    @media (max-width: 376px) {
+      display: none;
+    }
+    @media (max-height: 600px) {
+      display: none;
+    }
+  }
+
+  &__left-cloud {
+    width: fit-content;
+    position: relative;
+    @media (max-width: 768px) {
+      display: none;
+    }
+    @media (max-height: 600px) {
+      display: none;
+    }
+  }
+
+  &__container {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 60px 7% 0 0;
+    @media (max-width: 1200px) {
+      padding: 0;
+      position: absolute;
+      width: 419px;
+      height: 291px;
+      left: 43%;
+      margin: -125px 0 0 -125px;
+      top: 200px;
+    }
+    @media (min-height: 1024px) {
+      padding: 0;
+      position: absolute;
+      width: 419px;
+      height: 291px;
+      left: 43%;
+      margin: -125px 0 0 -125px;
+      top: 450px;
+    }
+    @media (max-width: 874px) {
+      width: 320px;
+      height: 291px;
+      left: 45%;
+      margin: -125px 0 0 -125px;
+      top: 300px;
+    }
+    @media (max-width: 376px) {
+      width: 300px;
+      height: 291px;
+      top: 30%;
+    }
+    @media (max-height: 720px) {
+      top: 180px;
+    }
+    @media (min-height: 1180px) {
+      top: 450px;
+    }
+    @media (max-width: 360px) {
+      width: 250px;
+    }
+
+    .logotype img {
+      top: 60px;
+      width: fit-content;
+      @media (max-width: 376px) {
+        width: 128px;
+        height: 40px;
+      }
+    }
+
+    .description {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      @media (max-width: 376px) {
+        word-wrap: break-word;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        line-break: auto;
+      }
+
+      &__title {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding-top: 93px;
+
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        font-size: calc(24px + 24 * (100vw / 960));
+        line-height: 104%;
+        white-space: nowrap;
+
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #162C4E;
+
+        opacity: 0.39;
+        @media (max-width: 1200px) {
+          font-size: calc(24px + 13 * (100vw / 960));
+        }
+        @media (max-width: 874px) {
+          padding-top: 50px;
+          font-size: 36px;
+        }
+        @media (max-width: 500px) {
+          word-wrap: break-word;
+          white-space: normal;
+        }
+        @media (max-width: 360px) {
+          font-size: 25px;
+        }
+        @media (max-width: 376px) {
+          padding: 40px 0 0 0;
+          word-wrap: break-word;
+          white-space: normal;
+          width: 230px;
+        }
+        @media (max-height: 800px) {
+          padding-top: 30px;
+        }
+        @media (max-height: 720px) {
+          padding-top: 10px;
+        }
+      }
+
+      &__subTitle {
+        width: 423px;
+        height: 54px;
+        margin-top: 8/960 * 100%;
+
+        font-family: 'Poppins(l)', serif;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+
+        color: rgba(0, 0, 0, 0.8);
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+          width: 286px;
+          height: 48px;
+        }
+        @media (max-width: 360px) {
+          font-size: 14px;
+          width: 210px;
+          margin: 5% 0;
+        }
+      }
+    }
+
+    .countdown {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 129px;
+      margin-top: 32/960 * 100%;
+
+      font-family: 'Poppins(l)', sans-serif;
+      font-weight: 600;
+      font-size: calc(24px + 24 * (100vw / 960));
+      line-height: 100%;
+      text-align: center;
+
+      color: #162C4E;
+      @media (max-width: 768px) {
+        font-size: 36px;
+      }
+      @media (max-width: 360px) {
+        font-size: 30px;
+      }
+
+      &__numbers {
+        width: 100%;
+      }
+
+      &__images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 360px) {
+          flex-wrap: wrap;
+          width: 210px;
+          .new {
+            display: none;
+          }
+        }
+
+        .item img {
+          @media (max-width: 768px) {
+            width: 64px;
+          }
+        }
+
+        .colon {
+          position: relative;
+
+          margin-left: 5%;
+          margin-bottom: 12%;
+
+        }
+
+        .item {
+          display: flex;
+
+          position: relative;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-left: 5%;
+          @media (max-width: 768px) {
+            margin-left: 0%;
+          }
+          @media (max-width: 360px) {
+            margin-top: 10%;
+            width: 40%;
+          }
+
+          &__text {
+            position: absolute;
+            bottom: 14%;
+
+
+            font-family: 'Poppins(l)', sans-serif;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 100%;
+
+            color: white;
+            @media (max-width: 768px) {
+              display: none;
+            }
+          }
+
+          &__text-second {
+            display: none;
+            position: absolute;
+            bottom: 10%;
+
+            font-family: 'Poppins(l)', sans-serif;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 100%;
+
+            color: white;
+            @media (max-width: 768px) {
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+
+    .event {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      text-align: center;
+
+      margin-top: 72/960 * 100%;
+
+      &__description {
+        width: 338px;
+        height: 27px;
+
+        font-family: 'Poppins(l)', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+
+        color: rgba(0, 0, 0, 0.8);
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+        @media (max-width: 360px) {
+          font-size: 14px;
+          width: 210px;
+        }
+      }
+
+      &__button {
+        position: relative;
+        width: 240px;
+        height: 60px;
+        margin-top: 20/960 * 100%;
+
+        background: #1D4169;
+        border-radius: 40px;
+
+
+        font-family: 'Poppins(l)', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: start;
+        padding-left: 25px;
+        padding-bottom: 4px;
+
+        color: #FFFFFF;
+
+        @media (max-width: 768px) {
+          font-size: 16px;
+        }
+        @media (max-width: 360px) {
+          font-size: 14px;
+          margin-top: 10%;
+          width: 170px;
+        }
+      }
+
+      &__button img {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 15px;
+        top: 20px;
+      }
+    }
+  }
+}
+
+
